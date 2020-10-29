@@ -112,7 +112,7 @@ public class VarastoTest {
 
   @Test
   public void saldonYlittavaOttoTyhjentaaVaraston() {
-    varasto.lisaaVarastoon(5.0)
+    varasto.lisaaVarastoon(5.0);
     varasto.otaVarastosta(6.0);
     assertEquals(0.0, varasto.getSaldo(), vertailuTarkkuus);
     assertEquals(
